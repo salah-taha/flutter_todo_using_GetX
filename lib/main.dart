@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
       locale: Locale('ar'),
       initialBinding: AuthBinding(),
       home: Splash(),
+      theme: ThemeData.dark(),
     );
   }
 }

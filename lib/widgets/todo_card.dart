@@ -17,7 +17,12 @@ class TodoCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: ListTile(
-        title: Text(todo.content),
+        title: Text(
+          todo.content,
+          style: TextStyle(
+              decoration:
+                  todo.done ? TextDecoration.lineThrough : TextDecoration.none),
+        ),
         onLongPress: () async {
           bool delete = await Get.dialog(
             AlertDialog(
@@ -42,6 +47,7 @@ class TodoCard extends StatelessWidget {
                 ),
               ],
             ),
+            barrierDismissible: false,
           );
           if (delete)
             Database().deleteTodo(todo.id, Get.find<AuthController>().user.uid);

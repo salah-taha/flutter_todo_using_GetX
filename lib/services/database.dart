@@ -52,6 +52,7 @@ class Database {
         .collection('users')
         .document(uid)
         .collection('todos')
+        .orderBy('dateCreated', descending: true)
         .snapshots()
         .map((snapshot) =>
             snapshot.documents.map((doc) => TodoModel.fromDoc(doc)).toList());
