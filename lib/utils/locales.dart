@@ -22,7 +22,8 @@ class Locales extends Translations {
           'welcome': 'Welcome',
           'noData': 'No Data',
           'confirmDelete': 'Are you sure you want to delete this todo ?',
-          'cancel': 'Cancel'
+          'cancel': 'Cancel',
+          'holdToDelete': 'Hold to Delete TODO',
         },
         'ar': {
           'home': 'الرئيسية',
@@ -43,7 +44,8 @@ class Locales extends Translations {
           'welcome': 'مرحبا',
           'noData': 'لا يوجد بيانات',
           'confirmDelete': 'هل انت متأكد من حذف هذه المهمة؟',
-          'cancel': 'الغاء'
+          'cancel': 'الغاء',
+          'holdToDelete': 'استمر بالضغط لحذف المهمة'
         }
       };
 }

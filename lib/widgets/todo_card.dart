@@ -23,6 +23,7 @@ class TodoCard extends StatelessWidget {
               decoration:
                   todo.done ? TextDecoration.lineThrough : TextDecoration.none),
         ),
+        subtitle: Text('holdToDelete'.tr),
         onLongPress: () async {
           bool delete = await Get.dialog(
             AlertDialog(
